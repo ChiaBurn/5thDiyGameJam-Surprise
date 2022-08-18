@@ -11,7 +11,14 @@ config_version=4
 [application]
 
 config/name="DiyGameJam-Surprise"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=506
+window/size/height=900
+window/size/resizable=false
 
 [physics]
 
