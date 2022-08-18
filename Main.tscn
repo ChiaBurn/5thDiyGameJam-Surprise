@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Quest Object/Click.tscn" type="PackedScene" id=2]
+
+[node name="Main" type="Node"]
+script = ExtResource( 1 )
+click_scene = ExtResource( 2 )
+
+[node name="PositionA" type="Position2D" parent="."]
+position = Vector2( 375, 607 )
+
+[node name="PositionB" type="Position2D" parent="."]
+position = Vector2( 297, 312 )
+
+[node name="PositionC" type="Position2D" parent="."]
+position = Vector2( 88, 402 )
+
+[node name="PositionD" type="Position2D" parent="."]
+position = Vector2( 394, 386 )
+
+[node name="PositionE" type="Position2D" parent="."]
+position = Vector2( 161, 558 )
+
+[node name="PositionF" type="Position2D" parent="."]
+position = Vector2( 263, 474 )
+
+[node name="PositionG" type="Position2D" parent="."]
+position = Vector2( 237, 683 )
+
+[node name="PositionH" type="Position2D" parent="."]
+position = Vector2( 183, 253 )
