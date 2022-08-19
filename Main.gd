@@ -3,10 +3,10 @@ export(PackedScene) var click_scene
 export(PackedScene) var key_scene
 export(PackedScene) var event_scene
 export(PackedScene) var draw_scene
+export var fail_max_count: int = 5
 
 var current_quest_index: int = 0
 var fail_count: int = 0
-const fail_max_count: int = 9
 onready var position = {
 	"A": $PositionA,
 	"B": $PositionB,
@@ -26,17 +26,17 @@ const quests = [
 	},
 	{
 		"type": "Click",
-		"life": 1000,
+		"life": 3000,
 		"position": "B"
 	},
 	{
 		"type": "Click",
-		"life": 500,
+		"life": 2000,
 		"position": "C"
 	},
 	{
 		"type": "Click",
-		"life": 2000,
+		"life": 1000,
 		"position": "D"
 	},
 	{
@@ -46,7 +46,7 @@ const quests = [
 	},
 	{
 		"type": "Click",
-		"life": 500,
+		"life": 1000,
 		"position": "F"
 	},
 	{
@@ -56,12 +56,12 @@ const quests = [
 	},
 	{
 		"type": "Click",
-		"life": 500,
+		"life": 700,
 		"position": "H"
 	},
 	{
 		"type": "Click",
-		"life": 500,
+		"life": 700,
 		"position": "E"
 	},
 	{
@@ -71,7 +71,7 @@ const quests = [
 	},
 	{
 		"type": "Click",
-		"life": 5000,
+		"life": 500,
 		"position": "C"
 	}
 ]
@@ -79,7 +79,7 @@ const quests = [
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("quests: ", quests)
-	go_next_quest()
+	show_current_quest()
 	
 func on_succeeed():
 	print("succeeed!")
@@ -101,42 +101,44 @@ func go_next_quest():
 	if(current_quest_index >= quests.size()):
 		end_game()
 		return
-	
-	var next_quest = quests[current_quest_index]
-	
-	match next_quest.type:
+	show_current_quest()
+
+
+func show_current_quest():
+	var quest = quests[current_quest_index]	
+	match quest.type:
 		"Click":
-			show_click(next_quest)
+			show_click(quest)
 		"Key":
-			show_key(next_quest)
+			show_key(quest)
 		"Event":
-			show_event(next_quest)
-		"draw":
-			show_draw(next_quest)
+			show_event(quest)
+		"Draw":
+			show_draw(quest)
 		_:
-			print("invalid type: ", next_quest)
+			print("invalid type: ", quest)
 			end_game()
 
-func show_click(next_quest):
-	print("show_click:", next_quest)
+func show_click(quest):
+	print("show_click:", quest)
 	var click = click_scene.instance()
-	var position_node = position[next_quest.position]
+	var position_node = position[quest.position]
 	click.position = position_node.position
-	click.set_life_ms(next_quest.life)	
+	click.set_life_ms(quest.life)
 	add_child(click);
 
-func show_key(next_quest):
+func show_key(quest):
 	# TODO: show key
-	print("show_key:", next_quest)
+	print("show_key:", quest)
 	pass
 
-func show_event(next_quest):
+func show_event(quest):
 	# TODO: show event
-	print("show_event:", next_quest)
+	print("show_event:", quest)
 	pass	
 
-func show_draw(next_quest):
+func show_draw(quest):
 	# TODO: show draw
-	print("show_draw:", next_quest)
+	print("show_draw:", quest)
 	pass
 
