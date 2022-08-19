@@ -12,6 +12,7 @@ func set_code_and_value(code, value):
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	connect("select_key", get_parent(), "on_select_key")
+	$Label.text = key_value
 
 func _on_Key_input_event(viewport, event, shape_idx):
 	if(event is InputEventMouseButton && event.pressed && event.button_index == BUTTON_LEFT):

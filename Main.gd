@@ -138,7 +138,6 @@ const keys = {
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print("quests: ", quests)
 	show_current_quest()
 	
 func on_succeed():
@@ -154,8 +153,8 @@ func on_fail():
 	go_next_quest()
 	
 func on_select_key(code):
-	print("select key:", code)
 	current_key_code = code
+	print("select key:", code)
 	get_tree().call_group("keys", "queue_free")
 	go_next_quest()
 
@@ -193,11 +192,7 @@ func show_click(quest):
 	add_child(click);
 
 func show_key(quest):
-	# TODO: show key
-	print("current_key_code:", current_key_code)
-	var current_key_selection = keys.get(current_key_code)
-	print("current_key:", current_key_selection)
-	
+	var current_key_selection = keys.get(current_key_code)	
 	if(current_key_selection == null):
 		print("no more key object!")
 		go_next_quest()
@@ -207,7 +202,6 @@ func show_key(quest):
 		show_key_selection(selection)
 
 func show_key_selection(selection):
-	print("append selection: ", selection)
 	var key = key_scene.instance()
 	var position_node = position[selection.position]
 	key.position = position_node.position
