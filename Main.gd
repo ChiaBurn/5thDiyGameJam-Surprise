@@ -81,8 +81,8 @@ func _ready():
 	print("quests: ", quests)
 	show_current_quest()
 	
-func on_succeeed():
-	print("succeeed!")
+func on_succeed():
+	print("succeed!")
 	go_next_quest()
 
 func on_fail():
@@ -120,7 +120,6 @@ func show_current_quest():
 			end_game()
 
 func show_click(quest):
-	print("show_click:", quest)
 	var click = click_scene.instance()
 	var position_node = position[quest.position]
 	click.position = position_node.position
