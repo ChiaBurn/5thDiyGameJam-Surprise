@@ -1,61 +1,61 @@
 {
     "start": [
         {
-            "code": "creative", "value": "發揮創意"
+            "code": "creative", "value": "發揮創意", "position": "A"
         },
         {
-            "code": "passion", "value": "喜好添加"
+            "code": "passion", "value": "喜好添加", "position": "B"
         },
         {
-            "code": "perfect", "value": "完美還原"
+            "code": "perfect", "value": "完美還原", "position": "C"
         }
     ],
     "creative": [
         {
-            "code": "creative_soul", "value": "靈魂創作"
+            "code": "creative_soul", "value": "靈魂創作", "position": "D"
         },
         {
-            "code": "creative_cute", "value": "可愛正義"
+            "code": "creative_cute", "value": "可愛正義", "position": "E"
         }
     ],
     "creative_soul": [
         {
-            "code": "creative_soul_meow", "value": "喵喵喵"
+            "code": "creative_soul_meow", "value": "喵喵喵", "position": "F"
         },
         {
-            "code": "creative_soul_power", "value": "力與美"
+            "code": "creative_soul_power", "value": "力與美", "position": "G"
         }
     ],
     "creative_cute": [
         {
-            "code": "creative_cute_chick", "value": "可愛小雞"
+            "code": "creative_cute_chick", "value": "可愛小雞", "position": "H"
         },
         {
-            "code": "creative_cute_kitty", "value": "可愛小貓"
+            "code": "creative_cute_kitty", "value": "可愛小貓", "position": "A"
         }
     ],
     "passion": [
         {
-            "code": "passion_nekomimi", "value": "貓耳哈斯哈斯"
+            "code": "passion_nekomimi", "value": "貓耳哈斯哈斯", "position": "E"
         },
         {
-            "code": "passion_furry", "value": "獸控之力"
+            "code": "passion_furry", "value": "獸控之力", "position": "C"
         }
     ],
     "passion_nekomimi": [
         {
-            "code": "passion_nekomimi_girl", "value": "貓娘哈斯哈斯"
+            "code": "passion_nekomimi_girl", "value": "貓娘哈斯哈斯", "position": "G"
         },
         {
-            "code": "passion_nekomimi_maid", "value": "女僕哈斯哈斯"
+            "code": "passion_nekomimi_maid", "value": "女僕哈斯哈斯", "position": "D"
         }
     ],
     "passion_furry": [
         {
-            "code": "passion_furry_shota", "value": "UWU"
+            "code": "passion_furry_shota", "value": "UWU", "position": "H"
         },
         {
-            "code": "passion_furry_power", "value": "POWER!"
+            "code": "passion_furry_power", "value": "POWER!", "position": "F"
         }
     ]
 }
