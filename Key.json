@@ -1,0 +1,61 @@
+{
+    "start": [
+        {
+            "code": "creative", "value": "發揮創意"
+        },
+        {
+            "code": "passion", "value": "喜好添加"
+        },
+        {
+            "code": "perfect", "value": "完美還原"
+        }
+    ],
+    "creative": [
+        {
+            "code": "creative_soul", "value": "靈魂創作"
+        },
+        {
+            "code": "creative_cute", "value": "可愛正義"
+        }
+    ],
+    "creative_soul": [
+        {
+            "code": "creative_soul_meow", "value": "喵喵喵"
+        },
+        {
+            "code": "creative_soul_power", "value": "力與美"
+        }
+    ],
+    "creative_cute": [
+        {
+            "code": "creative_cute_chick", "value": "可愛小雞"
+        },
+        {
+            "code": "creative_cute_kitty", "value": "可愛小貓"
+        }
+    ],
+    "passion": [
+        {
+            "code": "passion_nekomimi", "value": "貓耳哈斯哈斯"
+        },
+        {
+            "code": "passion_furry", "value": "獸控之力"
+        }
+    ],
+    "passion_nekomimi": [
+        {
+            "code": "passion_nekomimi_girl", "value": "貓娘哈斯哈斯"
+        },
+        {
+            "code": "passion_nekomimi_maid", "value": "女僕哈斯哈斯"
+        }
+    ],
+    "passion_furry": [
+        {
+            "code": "passion_furry_shota", "value": "UWU"
+        },
+        {
+            "code": "passion_furry_power", "value": "POWER!"
+        }
+    ]
+}
