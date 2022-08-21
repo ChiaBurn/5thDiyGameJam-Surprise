@@ -5,6 +5,7 @@ export(PackedScene) var event_scene
 export(PackedScene) var draw_scene
 export var fail_max_count: int = 5
 export var key_json_path: String = "res://JSON/Key.json"
+export var quest_json_path: String = "res://JSON/Quest.json"
 
 var current_quest_index: int = 0
 var current_key_code: String = "start"
@@ -21,65 +22,12 @@ onready var position = {
 	"R3": $PositionR3,
 }
 var keys: Dictionary
-# TODO: read quests fron JSON file
-const quests = [
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "L1"
-	},
-	{
-		"type": "Click",
-		"life": 3000,
-		"position": "L2"
-	},
-	{
-		"type": "Key",
-		"life": 5000
-	},
-	{
-		"type": "Click",
-		"life": 2000,
-		"position": "L3"
-	},
-	{
-		"type": "Key",
-		"life": 5000
-	},
-	{
-		"type": "Click",
-		"life": 1000,
-		"position": "M1"
-	},
-	{
-		"type": "Click",
-		"life": 1000,
-		"position": "M2"
-	},
-	{
-		"type": "Key",
-		"life": 5000
-	},
-	{
-		"type": "Click",
-		"life": 1000,
-		"position": "R2"
-	},
-	{
-		"type": "Click",
-		"life": 1000,
-		"position": "L2"
-	},
-	{
-		"type": "Click",
-		"life": 1000,
-		"position": "L3"
-	}
-]
+var quests: Array
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	keys = load_data_from_json_file(key_json_path)
+	quests = load_data_from_json_file(quest_json_path)
 	start_game()
 	
 func load_data_from_json_file(path):
@@ -129,7 +77,7 @@ func show_current_quest():
 		"Click":
 			show_click(quest)
 		"Key":
-			show_key(quest)
+			show_key(current_key_code)
 		"Event":
 			show_event(quest)
 		"Draw":
@@ -145,13 +93,12 @@ func show_click(quest):
 	click.set_life_ms(quest.life)
 	add_child(click);
 
-func show_key(quest):
-	var current_key_selection = keys.get(current_key_code)	
+func show_key(code):
+	var current_key_selection = keys.get(code)
 	if(current_key_selection == null):
 		print("no more key object!")
 		go_next_quest()
 		return
-	
 	for selection in current_key_selection:
 		show_key_selection(selection)
 
@@ -165,7 +112,7 @@ func show_key_selection(selection):
 func show_event(quest):
 	# TODO: show event
 	print("show_event:", quest)
-	pass	
+	pass
 
 func show_draw(quest):
 	# TODO: show draw

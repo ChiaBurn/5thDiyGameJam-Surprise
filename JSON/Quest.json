@@ -1,0 +1,54 @@
+[
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "L1"
+	},
+	{
+		"type": "Click",
+		"life": 3000,
+		"position": "L2"
+	},
+	{
+		"type": "Key",
+		"life": 5000
+	},
+	{
+		"type": "Click",
+		"life": 2000,
+		"position": "L3"
+	},
+	{
+		"type": "Key",
+		"life": 5000
+	},
+	{
+		"type": "Click",
+		"life": 1000,
+		"position": "M1"
+	},
+	{
+		"type": "Click",
+		"life": 1000,
+		"position": "M2"
+	},
+	{
+		"type": "Key",
+		"life": 5000
+	},
+	{
+		"type": "Click",
+		"life": 1000,
+		"position": "R2"
+	},
+	{
+		"type": "Click",
+		"life": 1000,
+		"position": "L2"
+	},
+	{
+		"type": "Click",
+		"life": 1000,
+		"position": "L3"
+	}
+]
