@@ -4,6 +4,7 @@ export(PackedScene) var key_scene
 export(PackedScene) var event_scene
 export(PackedScene) var draw_scene
 export var fail_max_count: int = 5
+export var key_json_path: String = "res://JSON/Key.json"
 
 var current_quest_index: int = 0
 var current_key_code: String = "start"
@@ -19,6 +20,7 @@ onready var position = {
 	"R2": $PositionR2,
 	"R3": $PositionR3,
 }
+var keys: Dictionary
 # TODO: read quests fron JSON file
 const quests = [
 	{
@@ -75,71 +77,20 @@ const quests = [
 	}
 ]
 
-const keys = {
-	"start": [
-		{
-			"code": "creative", "value": "發揮創意", "position": "L1"
-		},
-		{
-			"code": "passion", "value": "喜好添加", "position": "M2"
-		},
-		{
-			"code": "perfect", "value": "完美還原", "position": "R3"
-		}
-	],
-	"creative": [
-		{
-			"code": "creative_soul", "value": "靈魂創作", "position": "R1"
-		},
-		{
-			"code": "creative_cute", "value": "可愛正義", "position": "M2"
-		}
-	],
-	"creative_soul": [
-		{
-			"code": "creative_soul_meow", "value": "喵喵喵", "position": "R3"
-		},
-		{
-			"code": "creative_soul_power", "value": "力與美", "position": "M1"
-		}
-	],
-	"creative_cute": [
-		{
-			"code": "creative_cute_chick", "value": "可愛小雞", "position": "M2"
-		},
-		{
-			"code": "creative_cute_kitty", "value": "可愛小貓", "position": "L1"
-		}
-	],
-	"passion": [
-		{
-			"code": "passion_nekomimi", "value": "貓耳哈斯哈斯", "position": "R2"
-		},
-		{
-			"code": "passion_furry", "value": "獸控之力", "position": "L3"
-		}
-	],
-	"passion_nekomimi": [
-		{
-			"code": "passion_nekomimi_girl", "value": "貓娘哈斯哈斯", "position": "M1"
-		},
-		{
-			"code": "passion_nekomimi_maid", "value": "女僕哈斯哈斯", "position": "L3"
-		}
-	],
-	"passion_furry": [
-		{
-			"code": "passion_furry_shota", "value": "UWU", "position": "M2"
-		},
-		{
-			"code": "passion_furry_power", "value": "POWER!", "position": "R3"
-		}
-	]
-}
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	keys = load_data_from_json_file(key_json_path)
 	start_game()
+	
+func load_data_from_json_file(path):
+	var file = File.new()
+	if file.open(path, File.READ) != OK:
+		print("fail to open file '", path,"'")
+		return
+	var content = file.get_as_text()
+	file.close()
+	var json = parse_json(content)
+	return json
 	
 func start_game():
 	show_current_quest()
