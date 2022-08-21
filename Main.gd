@@ -9,26 +9,27 @@ var current_quest_index: int = 0
 var current_key_code: String = "start"
 var fail_count: int = 0
 onready var position = {
-	"A": $PositionA,
-	"B": $PositionB,
-	"C": $PositionC,
-	"D": $PositionD,
-	"E": $PositionE,
-	"F": $PositionF,
-	"G": $PositionG,
-	"H": $PositionH
+	"L1": $PositionL1,
+	"L2": $PositionL2,
+	"L3": $PositionL3,
+	"M1": $PositionM1,
+	"M2": $PositionM2,
+	"M3": $PositionM3,
+	"R1": $PositionR1,
+	"R2": $PositionR2,
+	"R3": $PositionR3,
 }
 # TODO: read quests fron JSON file
 const quests = [
 	{
 		"type": "Click",
 		"life": 5000,
-		"position": "A"
+		"position": "L1"
 	},
 	{
 		"type": "Click",
 		"life": 3000,
-		"position": "B"
+		"position": "L2"
 	},
 	{
 		"type": "Key",
@@ -37,7 +38,7 @@ const quests = [
 	{
 		"type": "Click",
 		"life": 2000,
-		"position": "C"
+		"position": "L3"
 	},
 	{
 		"type": "Key",
@@ -46,12 +47,12 @@ const quests = [
 	{
 		"type": "Click",
 		"life": 1000,
-		"position": "G"
+		"position": "M1"
 	},
 	{
 		"type": "Click",
 		"life": 1000,
-		"position": "H"
+		"position": "M2"
 	},
 	{
 		"type": "Key",
@@ -60,85 +61,91 @@ const quests = [
 	{
 		"type": "Click",
 		"life": 1000,
-		"position": "E"
+		"position": "R2"
 	},
 	{
 		"type": "Click",
 		"life": 1000,
-		"position": "B"
+		"position": "L2"
 	},
 	{
 		"type": "Click",
 		"life": 1000,
-		"position": "C"
+		"position": "L3"
 	}
 ]
 
 const keys = {
 	"start": [
 		{
-			"code": "creative", "value": "發揮創意", "position": "A"
+			"code": "creative", "value": "發揮創意", "position": "L1"
 		},
 		{
-			"code": "passion", "value": "喜好添加", "position": "B"
+			"code": "passion", "value": "喜好添加", "position": "M2"
 		},
 		{
-			"code": "perfect", "value": "完美還原", "position": "C"
+			"code": "perfect", "value": "完美還原", "position": "R3"
 		}
 	],
 	"creative": [
 		{
-			"code": "creative_soul", "value": "靈魂創作", "position": "D"
+			"code": "creative_soul", "value": "靈魂創作", "position": "R1"
 		},
 		{
-			"code": "creative_cute", "value": "可愛正義", "position": "E"
+			"code": "creative_cute", "value": "可愛正義", "position": "M2"
 		}
 	],
 	"creative_soul": [
 		{
-			"code": "creative_soul_meow", "value": "喵喵喵", "position": "F"
+			"code": "creative_soul_meow", "value": "喵喵喵", "position": "R3"
 		},
 		{
-			"code": "creative_soul_power", "value": "力與美", "position": "G"
+			"code": "creative_soul_power", "value": "力與美", "position": "M1"
 		}
 	],
 	"creative_cute": [
 		{
-			"code": "creative_cute_chick", "value": "可愛小雞", "position": "H"
+			"code": "creative_cute_chick", "value": "可愛小雞", "position": "M2"
 		},
 		{
-			"code": "creative_cute_kitty", "value": "可愛小貓", "position": "A"
+			"code": "creative_cute_kitty", "value": "可愛小貓", "position": "L1"
 		}
 	],
 	"passion": [
 		{
-			"code": "passion_nekomimi", "value": "貓耳哈斯哈斯", "position": "E"
+			"code": "passion_nekomimi", "value": "貓耳哈斯哈斯", "position": "R2"
 		},
 		{
-			"code": "passion_furry", "value": "獸控之力", "position": "C"
+			"code": "passion_furry", "value": "獸控之力", "position": "L3"
 		}
 	],
 	"passion_nekomimi": [
 		{
-			"code": "passion_nekomimi_girl", "value": "貓娘哈斯哈斯", "position": "G"
+			"code": "passion_nekomimi_girl", "value": "貓娘哈斯哈斯", "position": "M1"
 		},
 		{
-			"code": "passion_nekomimi_maid", "value": "女僕哈斯哈斯", "position": "D"
+			"code": "passion_nekomimi_maid", "value": "女僕哈斯哈斯", "position": "L3"
 		}
 	],
 	"passion_furry": [
 		{
-			"code": "passion_furry_shota", "value": "UWU", "position": "H"
+			"code": "passion_furry_shota", "value": "UWU", "position": "M2"
 		},
 		{
-			"code": "passion_furry_power", "value": "POWER!", "position": "F"
+			"code": "passion_furry_power", "value": "POWER!", "position": "R3"
 		}
 	]
 }
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	start_game()
+	
+func start_game():
 	show_current_quest()
+	
+func end_game():
+	print("Game over! current index:", current_quest_index)
 	
 func on_succeed():
 	print("succeed!")
@@ -157,10 +164,6 @@ func on_select_key(code):
 	print("select key:", code)
 	get_tree().call_group("keys", "queue_free")
 	go_next_quest()
-
-		
-func end_game():
-	print("Game over! current index:", current_quest_index)
 
 func go_next_quest():
 	current_quest_index += 1

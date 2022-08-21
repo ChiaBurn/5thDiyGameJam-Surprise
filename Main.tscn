@@ -9,26 +9,29 @@ script = ExtResource( 1 )
 click_scene = ExtResource( 2 )
 key_scene = ExtResource( 3 )
 
-[node name="PositionA" type="Position2D" parent="."]
-position = Vector2( 375, 607 )
+[node name="PositionL1" type="Position2D" parent="."]
+position = Vector2( 109, 357 )
 
-[node name="PositionB" type="Position2D" parent="."]
-position = Vector2( 297, 312 )
+[node name="PositionL2" type="Position2D" parent="."]
+position = Vector2( 182, 559 )
 
-[node name="PositionC" type="Position2D" parent="."]
-position = Vector2( 88, 402 )
+[node name="PositionL3" type="Position2D" parent="."]
+position = Vector2( 115, 673 )
 
-[node name="PositionD" type="Position2D" parent="."]
-position = Vector2( 394, 386 )
+[node name="PositionR1" type="Position2D" parent="."]
+position = Vector2( 377, 273 )
 
-[node name="PositionE" type="Position2D" parent="."]
-position = Vector2( 161, 558 )
+[node name="PositionR2" type="Position2D" parent="."]
+position = Vector2( 408, 446 )
 
-[node name="PositionF" type="Position2D" parent="."]
-position = Vector2( 263, 474 )
+[node name="PositionR3" type="Position2D" parent="."]
+position = Vector2( 366, 655 )
 
-[node name="PositionG" type="Position2D" parent="."]
-position = Vector2( 237, 683 )
+[node name="PositionM1" type="Position2D" parent="."]
+position = Vector2( 220, 269 )
 
-[node name="PositionH" type="Position2D" parent="."]
-position = Vector2( 183, 253 )
+[node name="PositionM2" type="Position2D" parent="."]
+position = Vector2( 263, 442 )
+
+[node name="PositionM3" type="Position2D" parent="."]
+position = Vector2( 253, 772 )
