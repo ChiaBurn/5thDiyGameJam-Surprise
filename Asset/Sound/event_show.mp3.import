@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/event_show.mp3-39222da7f53f62d03e3936179ce58723.mp3str"
+
+[deps]
+
+source_file="res://Asset/Sound/event_show.mp3"
+dest_files=[ "res://.import/event_show.mp3-39222da7f53f62d03e3936179ce58723.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

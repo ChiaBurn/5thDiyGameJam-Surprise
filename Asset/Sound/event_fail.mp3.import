@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/event_fail.mp3-35549ef9cd1ffb93ca3561eb861c82e0.mp3str"
+
+[deps]
+
+source_file="res://Asset/Sound/event_fail.mp3"
+dest_files=[ "res://.import/event_fail.mp3-35549ef9cd1ffb93ca3561eb861c82e0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

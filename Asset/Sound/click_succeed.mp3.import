@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/click_succeed.mp3-8bca33363e7ebbcea6c5440b08bc9718.mp3str"
+
+[deps]
+
+source_file="res://Asset/Sound/click_succeed.mp3"
+dest_files=[ "res://.import/click_succeed.mp3-8bca33363e7ebbcea6c5440b08bc9718.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

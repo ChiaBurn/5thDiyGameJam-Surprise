@@ -1,5 +1,15 @@
 icon source:
+flaticon
 https://www.flaticon.com
 
 font source:
+Google Fonts
 https://fonts.google.com/noto/specimen/Noto+Sans+TC
+
+sound effect source:
+効果音ラボ
+https://soundeffect-lab.info
+
+BGM source:
+Freedom Trail Studio | Pinions
+https://www.youtube.com/watch?v=5wPx43F50Mg
