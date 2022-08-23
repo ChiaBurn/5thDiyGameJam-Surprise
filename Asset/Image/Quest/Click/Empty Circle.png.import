@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Empty Circle.png-220f3fff599a80ace51ddf8dd7991191.stex"
+path="res://.import/Empty Circle.png-a0742ec247089d152b04e7c15dfc7175.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Click/Empty Circle.png"
-dest_files=[ "res://.import/Empty Circle.png-220f3fff599a80ace51ddf8dd7991191.stex" ]
+source_file="res://Asset/Image/Quest/Click/Empty Circle.png"
+dest_files=[ "res://.import/Empty Circle.png-a0742ec247089d152b04e7c15dfc7175.stex" ]
 
 [params]
 

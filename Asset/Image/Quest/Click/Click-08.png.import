@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Click-01.png-d7927e3be7de110ff71951d26a4390f1.stex"
+path="res://.import/Click-08.png-1eae40bcb73a4366cdd76f7c8fca7a85.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Click/Click-01.png"
-dest_files=[ "res://.import/Click-01.png-d7927e3be7de110ff71951d26a4390f1.stex" ]
+source_file="res://Asset/Image/Quest/Click/Click-08.png"
+dest_files=[ "res://.import/Click-08.png-1eae40bcb73a4366cdd76f7c8fca7a85.stex" ]
 
 [params]
 
