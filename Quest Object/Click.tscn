@@ -10,7 +10,6 @@
 [ext_resource path="res://Asset/Image/Quest/Click/Click-01.png" type="Texture" id=8]
 [ext_resource path="res://Quest Object/Click.gd" type="Script" id=10]
 
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 7 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],

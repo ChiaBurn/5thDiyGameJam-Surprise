@@ -4,7 +4,6 @@
 [ext_resource path="res://Quest Object/Key.gd" type="Script" id=2]
 [ext_resource path="res://Asset/Fonts/NotoSansTC-Regular.otf" type="DynamicFontData" id=3]
 
-
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 32.0
 height = 112.0
