@@ -1,170 +1,340 @@
 [
     {
-        "question": "",
+        "question": "1 + 1 = ?",
         "selections": [
             {
-                "text":"",
+                "text":"8",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"3",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"2",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "question": "13 + 47 = ?",
+        "selections": [
+            {
+                "text":"52",
+                "isAnswer": false
+            },
+            {
+                "text":"60",
+                "isAnswer": true
+            },
+            {
+                "text":"71",
                 "isAnswer": false
             }
         ]
     },
     {
-        "question": "",
+        "question": "100 - 87 = ?",
         "selections": [
             {
-                "text":"",
+                "text":"3",
                 "isAnswer": false
             },
             {
-                "text":"",
-                "isAnswer": false
+                "text":"13",
+                "isAnswer": true
             },
             {
-                "text":"",
+                "text":"23",
                 "isAnswer": false
             }
         ]
     },
     {
-        "question": "",
+        "question": "13 - 47 = ?",
         "selections": [
             {
-                "text":"",
+                "text":"34",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"-60",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"-34",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "question": "17 + 28 = ?",
+        "selections": [
+            {
+                "text":"55",
+                "isAnswer": false
+            },
+            {
+                "text":"35",
+                "isAnswer": false
+            },
+            {
+                "text":"45",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "question": "17 - 28 = ?",
+        "selections": [
+            {
+                "text":"-11",
+                "isAnswer": true
+            },
+            {
+                "text":"-21",
+                "isAnswer": false
+            },
+            {
+                "text":"-9",
                 "isAnswer": false
             }
         ]
     },
     {
-        "question": "",
+        "question": "這句話共有幾個字？",
         "selections": [
             {
-                "text":"",
+                "text":"8",
+                "isAnswer": true
+            },
+            {
+                "text":"9",
                 "isAnswer": false
             },
             {
-                "text":"",
-                "isAnswer": false
-            },
-            {
-                "text":"",
+                "text":"10",
                 "isAnswer": false
             }
         ]
     },
     {
-        "question": "",
+        "question": "這句話一共有幾個字？",
         "selections": [
             {
-                "text":"",
+                "text":"8",
                 "isAnswer": false
             },
             {
-                "text":"",
-                "isAnswer": false
+                "text":"9",
+                "isAnswer": true
             },
             {
-                "text":"",
+                "text":"10",
                 "isAnswer": false
             }
         ]
     },
     {
-        "question": "",
+        "question": "這句話總共包含幾個字？",
         "selections": [
             {
-                "text":"",
+                "text":"8",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"9",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"10",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "question": "【氈】的筆劃為多少？",
+        "selections": [
+            {
+                "text":"19",
+                "isAnswer": false
+            },
+            {
+                "text":"16",
+                "isAnswer": false
+            },
+            {
+                "text":"17",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "question": "【氈】的部首為何？",
+        "selections": [
+            {
+                "text":"曰",
+                "isAnswer": false
+            },
+            {
+                "text":"亶",
+                "isAnswer": false
+            },
+            {
+                "text":"毛",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "question": "【些】的部首為何？",
+        "selections": [
+            {
+                "text":"一",
+                "isAnswer": false
+            },
+            {
+                "text":"二",
+                "isAnswer": true
+            },
+            {
+                "text":"七",
                 "isAnswer": false
             }
         ]
     },
     {
-        "question": "",
+        "question": "【才】的部首為何？",
         "selections": [
             {
-                "text":"",
+                "text":"一",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"才",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"手",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "question": "一首五言律詩的唐詩共有幾個字？",
+        "selections": [
+            {
+                "text":"40字",
+                "isAnswer": true
+            },
+            {
+                "text":"20字",
+                "isAnswer": false
+            },
+            {
+                "text":"56字",
                 "isAnswer": false
             }
         ]
     },
     {
-        "question": "",
+        "question": "火警專線為何？",
         "selections": [
             {
-                "text":"",
+                "text":"110",
                 "isAnswer": false
             },
             {
-                "text":"",
-                "isAnswer": false
+                "text":"119",
+                "isAnswer": true
             },
             {
-                "text":"",
+                "text":"112",
                 "isAnswer": false
             }
         ]
     },
     {
-        "question": "",
+        "question": "燙傷急救五步驟口訣為何？",
         "selections": [
             {
-                "text":"",
+                "text":"濕搓沖捧擦",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"泡蓋脫沖送",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"沖脫泡蓋送",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "question": "【無線網路】英文為何？",
+        "selections": [
+            {
+                "text":"Wl-Fl",
+                "isAnswer": false
+            },
+            {
+                "text":"Wi-Fi",
+                "isAnswer": true
+            },
+            {
+                "text":"W1-F1",
                 "isAnswer": false
             }
         ]
     },
     {
-        "question": "",
+        "question": "鱷魚是？",
         "selections": [
             {
-                "text":"",
+                "text":"魚類",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"兩棲",
                 "isAnswer": false
             },
             {
-                "text":"",
+                "text":"爬蟲",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "question": "下列何者為魚類？",
+        "selections": [
+            {
+                "text":"海馬",
+                "isAnswer": true
+            },
+            {
+                "text":"海星",
+                "isAnswer": false
+            },
+            {
+                "text":"鯨魚",
+                "isAnswer": false
+            }
+        ]
+    },
+    {
+        "question": "哪種動物頸椎骨骨頭數最多？",
+        "selections": [
+            {
+                "text":"貓頭鷹",
+                "isAnswer": true
+            },
+            {
+                "text":"象龜",
+                "isAnswer": false
+            },
+            {
+                "text":"長頸鹿",
                 "isAnswer": false
             }
         ]
