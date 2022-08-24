@@ -18,178 +18,178 @@
 		"life": 8000
 	},
 	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
-		"type": "Click",
-		"life": 5000,
-		"position": "M2"
-	},
-	{
-		"type": "Event",
-		"life": 8000
-	},
-	{
 		"type": "Key"
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
+	},
+	{
+		"type": "Click",
+		"life": 5000,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 8000
 	},
 	{
 		"type": "Key"

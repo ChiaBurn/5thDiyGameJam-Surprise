@@ -36,6 +36,7 @@ func _on_Answer3_pressed():
 func end_event(isCorrect: bool):
 	disable_all_button()
 	$AnimatedSprite.stop()
+	$AnimatedSprite.visible = false
 	if(isCorrect):
 		$CorrectImage.visible = true
 		$EventSucceedSound.play()

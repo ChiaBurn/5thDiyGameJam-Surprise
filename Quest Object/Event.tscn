@@ -97,13 +97,13 @@ animation = "timer"
 
 [node name="CorrectImage" type="Sprite" parent="."]
 visible = false
-position = Vector2( 280, 320 )
+position = Vector2( 264, 776 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 11 )
 
 [node name="IncorrectImage" type="Sprite" parent="."]
 visible = false
-position = Vector2( 280, 320 )
+position = Vector2( 264, 776 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 12 )
 
