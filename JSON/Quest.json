@@ -2,25 +2,52 @@
 	{
 		"type": "Click",
 		"life": 8000,
+		"position": "M2"
+	},
+	{
+		"type": "Click",
+		"life": 5000,
 		"position": "L1"
 	},
 	{
 		"type": "Click",
-		"life": 3000,
-		"position": "L2"
+		"life": 4500,
+		"position": "R3"
 	},
 	{
-		"type": "Key",
-		"life": 5000
+		"type": "Click",
+		"life": 4000,
+		"position": "M1"
+	},
+	{
+		"type": "Click",
+		"life": 3500,
+		"position": "L3"
+	},
+	{
+		"type": "Click",
+		"life": 3000,
+		"position": "R1"
+	},
+	{
+		"type": "Click",
+		"life": 2500,
+		"position": "M1"
 	},
 	{
 		"type": "Click",
 		"life": 2000,
-		"position": "L3"
+		"position": "M3"
 	},
 	{
-		"type": "Key",
-		"life": 5000
+		"type": "Click",
+		"life": 1500,
+		"position": "L2"
+	},
+	{
+		"type": "Click",
+		"life": 1000,
+		"position": "R3"
 	},
 	{
 		"type": "Click",
@@ -28,27 +55,137 @@
 		"position": "M1"
 	},
 	{
-		"type": "Click",
-		"life": 1000,
-		"position": "M2"
+		"type": "Event",
+		"life": 8000
 	},
 	{
-		"type": "Key",
+		"type": "Event",
 		"life": 5000
 	},
 	{
-		"type": "Click",
-		"life": 1000,
-		"position": "R2"
+		"type": "Event",
+		"life": 4000
+	},
+	{
+		"type": "Event",
+		"life": 3000
+	},
+	{
+		"type": "Event",
+		"life": 2000
 	},
 	{
 		"type": "Click",
 		"life": 1000,
+		"position": "L1"
+	},
+	{
+		"type": "Event",
+		"life": 2000
+	},
+	{
+		"type": "Click",
+		"life": 1000,
+		"position": "R1"
+	},
+	{
+		"type": "Click",
+		"life": 700,
+		"position": "L3"
+	},
+	{
+		"type": "Click",
+		"life": 700,
+		"position": "M2"
+	},
+	{
+		"type": "Click",
+		"life": 600,
+		"position": "R3"
+	},
+	{
+		"type": "Click",
+		"life": 500,
+		"position": "M1"
+	},
+	{
+		"type": "Event",
+		"life": 2000
+	},
+	{
+		"type": "Click",
+		"life": 700,
 		"position": "L2"
 	},
 	{
+		"type": "Event",
+		"life": 2000
+	},
+	{
+		"type": "Click",
+		"life": 500,
+		"position": "R2"
+	},
+	{
+		"type": "Key"
+	},
+	{
+		"type": "Click",
+		"life": 700,
+		"position": "M3"
+	},
+	{
+		"type": "Event",
+		"life": 2000
+	},
+	{
+		"type": "Click",
+		"life": 700,
+		"position": "L1"
+	},
+	{
+		"type": "Click",
+		"life": 600,
+		"position": "R3"
+	},
+	{
+		"type": "Key"
+	},
+	{
+		"type": "Click",
+		"life": 500,
+		"position": "M2"
+	},
+	{
+		"type": "Event",
+		"life": 2000
+	},
+	{
 		"type": "Click",
 		"life": 1000,
+		"position": "R1"
+	},
+	{
+		"type": "Click",
+		"life": 700,
+		"position": "M2"
+	},
+	{
+		"type": "Click",
+		"life": 700,
+		"position": "M1"
+	},
+	{
+		"type": "Click",
+		"life": 600,
 		"position": "L3"
+	},
+	{
+		"type": "Click",
+		"life": 500,
+		"position": "R1"
+	},
+	{
+		"type": "Key"
 	}
 ]

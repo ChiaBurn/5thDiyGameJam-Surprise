@@ -6,6 +6,7 @@ export(PackedScene) var draw_scene
 export var fail_max_count: int = 5
 export var key_json_path: String = "res://JSON/Key.json"
 export var quest_json_path: String = "res://JSON/Quest.json"
+export var event_json_path: String = "res://JSON/Event.json"
 
 var current_quest_index: int = 0
 var current_key_code: String = "start"
@@ -23,11 +24,15 @@ onready var position = {
 }
 var keys: Dictionary
 var quests: Array
+var events: Array
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	randomize()
 	keys = load_data_from_json_file(key_json_path)
 	quests = load_data_from_json_file(quest_json_path)
+	events = load_data_from_json_file(event_json_path)
+	events.shuffle()
 	start_game()
 	
 func load_data_from_json_file(path):
@@ -55,15 +60,10 @@ func on_succeed(type):
 	match type:
 		"Click":
 			$ClickSucceedSound.play()
-		"Event":
-			$EventSucceedSound.play()
 	go_next_quest()
 
 func on_fail(type):
 	print("fail!")
-	match type:
-		"Event":
-			$EventFailSound.play()
 	fail_count += 1
 	if(fail_count >= fail_max_count):
 		end_game()
@@ -104,7 +104,7 @@ func show_click(quest):
 	var position_node = position[quest.position]
 	click.position = position_node.position
 	click.set_life_ms(quest.life)
-	add_child(click);
+	add_child(click)
 
 func show_key(code):
 	var current_key_selection = keys.get(code)
@@ -121,13 +121,17 @@ func show_key_selection(selection):
 	var position_node = position[selection.position]
 	key.position = position_node.position
 	key.set_code_and_value(selection.code, selection.value)
-	add_child(key);
+	add_child(key)
 
 func show_event(quest):
-	# TODO: show event
-	print("show_event:", quest)
-	$EventShowSound.play()
-	pass
+	var current_event = events.pop_back()
+	if(current_event == null):
+		print("no more event object!")
+		go_next_quest()
+		return
+	var event = event_scene.instance()
+	event.set_content(current_event, quest.life)
+	add_child(event)
 
 func show_draw(quest):
 	# TODO: show draw

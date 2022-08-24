@@ -9,9 +9,9 @@ func set_life_ms(millisecond):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var speed_scale : float = 1000 / life_ms
 	connect("succeed", get_parent(), "on_succeed")
 	connect("fail", get_parent(), "on_fail")
+	var speed_scale : float = 1000 / life_ms
 	$AnimatedSprite.set_speed_scale(speed_scale)
 	$AnimatedSprite.playing = true
 

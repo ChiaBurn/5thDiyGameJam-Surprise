@@ -22,7 +22,6 @@ animations = [ {
 radius = 246.0
 
 [node name="Click" type="Area2D"]
-position = Vector2( 180, 320 )
 scale = Vector2( 0.125, 0.125 )
 script = ExtResource( 10 )
 __meta__ = {
