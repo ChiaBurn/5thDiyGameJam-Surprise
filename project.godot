@@ -16,9 +16,11 @@ config/icon="res://icon.png"
 
 [display]
 
-window/size/width=506
-window/size/height=900
-window/size/resizable=false
+window/size/width=540
+window/size/height=960
+window/handheld/orientation="portrait"
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [physics]
 
@@ -26,4 +28,5 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 environment/default_environment="res://default_env.tres"

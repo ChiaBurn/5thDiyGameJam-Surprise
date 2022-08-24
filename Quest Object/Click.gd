@@ -1,6 +1,6 @@
 extends Area2D
-signal succeed
-signal fail
+signal succeed(type)
+signal fail(type)
 
 var life_ms : float
 
@@ -17,7 +17,7 @@ func _ready():
 
 func emit_then_remove_self(signal_value):
 	hide()
-	emit_signal(signal_value)
+	emit_signal(signal_value, "Click")
 	queue_free()
 
 func _on_AnimatedSprite_animation_finished():

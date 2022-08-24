@@ -41,17 +41,27 @@ func load_data_from_json_file(path):
 	return json
 	
 func start_game():
+	$Music.play()
 	show_current_quest()
 	
 func end_game():
+	$Music.stop()
 	print("Game over! current index:", current_quest_index)
 	
-func on_succeed():
+func on_succeed(type):
 	print("succeed!")
+	match type:
+		"Click":
+			$ClickSucceedSound.play()
+		"Event":
+			$EventSucceedSound.play()
 	go_next_quest()
 
-func on_fail():
+func on_fail(type):
 	print("fail!")
+	match type:
+		"Event":
+			$EventFailSound.play()
 	fail_count += 1
 	if(fail_count >= fail_max_count):
 		end_game()
@@ -59,6 +69,7 @@ func on_fail():
 	go_next_quest()
 	
 func on_select_key(code):
+	$KeySelectSound.play()
 	current_key_code = code
 	print("select key:", code)
 	get_tree().call_group("keys", "queue_free")
@@ -101,6 +112,7 @@ func show_key(code):
 		return
 	for selection in current_key_selection:
 		show_key_selection(selection)
+	$KeyShowSound.play()
 
 func show_key_selection(selection):
 	var key = key_scene.instance()
@@ -112,6 +124,7 @@ func show_key_selection(selection):
 func show_event(quest):
 	# TODO: show event
 	print("show_event:", quest)
+	$EventShowSound.play()
 	pass
 
 func show_draw(quest):

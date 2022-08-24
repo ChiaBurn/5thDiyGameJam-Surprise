@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Quest Object/Click.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Quest Object/Key.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Asset/Sound/BGM.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Asset/Sound/click_succeed.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Asset/Sound/key_show.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Asset/Sound/key_select.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Asset/Sound/event_show.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Asset/Sound/event_succeed.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Asset/Sound/event_fail.mp3" type="AudioStream" id=10]
 
 [node name="Main" type="Node"]
 script = ExtResource( 1 )
@@ -35,3 +42,24 @@ position = Vector2( 263, 442 )
 
 [node name="PositionM3" type="Position2D" parent="."]
 position = Vector2( 253, 772 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="ClickSucceedSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="KeyShowSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="KeySelectSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="EventShowSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="EventSucceedSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="EventFailSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
