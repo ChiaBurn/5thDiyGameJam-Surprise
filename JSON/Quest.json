@@ -1,7 +1,7 @@
 [
 	{
 		"type": "Click",
-		"life": 5000,
+		"life": 8000,
 		"position": "L1"
 	},
 	{
