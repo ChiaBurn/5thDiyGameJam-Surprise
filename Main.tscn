@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Quest Object/Click.tscn" type="PackedScene" id=2]
@@ -7,12 +7,10 @@
 [ext_resource path="res://Asset/Sound/click_succeed.mp3" type="AudioStream" id=5]
 [ext_resource path="res://Asset/Sound/key_show.mp3" type="AudioStream" id=6]
 [ext_resource path="res://Asset/Sound/key_select.mp3" type="AudioStream" id=7]
-[ext_resource path="res://Asset/Sound/event_show.mp3" type="AudioStream" id=8]
-[ext_resource path="res://Asset/Sound/event_succeed.mp3" type="AudioStream" id=9]
-[ext_resource path="res://Asset/Sound/event_fail.mp3" type="AudioStream" id=10]
 [ext_resource path="res://Asset/Image/background_01.png" type="Texture" id=11]
 [ext_resource path="res://Asset/Image/background_03.png" type="Texture" id=12]
 [ext_resource path="res://Asset/Image/background_02.png" type="Texture" id=13]
+[ext_resource path="res://Quest Object/Event.tscn" type="PackedScene" id=14]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -26,6 +24,7 @@ animations = [ {
 script = ExtResource( 1 )
 click_scene = ExtResource( 2 )
 key_scene = ExtResource( 3 )
+event_scene = ExtResource( 14 )
 
 [node name="BackgroundAnimation" type="AnimatedSprite" parent="."]
 position = Vector2( 270, 478 )
@@ -62,6 +61,7 @@ position = Vector2( 293, 712 )
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = -10.0
 
 [node name="ClickSucceedSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
@@ -71,12 +71,3 @@ stream = ExtResource( 6 )
 
 [node name="KeySelectSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
-
-[node name="EventShowSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 8 )
-
-[node name="EventSucceedSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
-
-[node name="EventFailSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 10 )

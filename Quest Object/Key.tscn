@@ -13,7 +13,6 @@ size = 20
 font_data = ExtResource( 3 )
 
 [node name="Key" type="Area2D" groups=["keys"]]
-position = Vector2( 214, 336 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
