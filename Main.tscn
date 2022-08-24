@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Quest Object/Click.tscn" type="PackedScene" id=2]
@@ -10,38 +10,55 @@
 [ext_resource path="res://Asset/Sound/event_show.mp3" type="AudioStream" id=8]
 [ext_resource path="res://Asset/Sound/event_succeed.mp3" type="AudioStream" id=9]
 [ext_resource path="res://Asset/Sound/event_fail.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Asset/Image/background_01.png" type="Texture" id=11]
+[ext_resource path="res://Asset/Image/background_03.png" type="Texture" id=12]
+[ext_resource path="res://Asset/Image/background_02.png" type="Texture" id=13]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 11 ), ExtResource( 13 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "felting",
+"speed": 3.0
+} ]
 
 [node name="Main" type="Node"]
 script = ExtResource( 1 )
 click_scene = ExtResource( 2 )
 key_scene = ExtResource( 3 )
 
+[node name="BackgroundAnimation" type="AnimatedSprite" parent="."]
+position = Vector2( 270, 478 )
+scale = Vector2( 0.498148, 0.498148 )
+frames = SubResource( 1 )
+animation = "felting"
+
 [node name="PositionL1" type="Position2D" parent="."]
-position = Vector2( 109, 357 )
+position = Vector2( 90, 286 )
 
 [node name="PositionL2" type="Position2D" parent="."]
-position = Vector2( 182, 559 )
+position = Vector2( 153, 483 )
 
 [node name="PositionL3" type="Position2D" parent="."]
-position = Vector2( 115, 673 )
+position = Vector2( 105, 640 )
 
 [node name="PositionR1" type="Position2D" parent="."]
-position = Vector2( 377, 273 )
+position = Vector2( 417, 324 )
 
 [node name="PositionR2" type="Position2D" parent="."]
 position = Vector2( 408, 446 )
 
 [node name="PositionR3" type="Position2D" parent="."]
-position = Vector2( 366, 655 )
+position = Vector2( 363, 555 )
 
 [node name="PositionM1" type="Position2D" parent="."]
-position = Vector2( 220, 269 )
+position = Vector2( 255, 253 )
 
 [node name="PositionM2" type="Position2D" parent="."]
 position = Vector2( 263, 442 )
 
 [node name="PositionM3" type="Position2D" parent="."]
-position = Vector2( 253, 772 )
+position = Vector2( 293, 712 )
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
