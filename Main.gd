@@ -42,10 +42,12 @@ func load_data_from_json_file(path):
 	
 func start_game():
 	$Music.play()
+	$BackgroundAnimation.play()
 	show_current_quest()
 	
 func end_game():
 	$Music.stop()
+	$BackgroundAnimation.stop()
 	print("Game over! current index:", current_quest_index)
 	
 func on_succeed(type):
