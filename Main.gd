@@ -3,7 +3,7 @@ export(PackedScene) var click_scene
 export(PackedScene) var key_scene
 export(PackedScene) var event_scene
 export(PackedScene) var draw_scene
-var fail_max_count: int = SceneChanger.scene_data.fail_max_count
+var fail_max_count: int
 export var key_json_path: String = "res://JSON/Key.json"
 export var quest_json_path: String = "res://JSON/Quest.json"
 export var event_json_path: String = "res://JSON/Event.json"
@@ -36,6 +36,7 @@ func initialize():
 	current_quest_index = 0
 	current_key_code = "start"
 	fail_count = 0
+	fail_max_count = SceneChanger.scene_data.fail_max_count
 	keys = load_data_from_json_file(key_json_path)
 	quests = load_data_from_json_file(quest_json_path)
 	events = load_data_from_json_file(event_json_path)
