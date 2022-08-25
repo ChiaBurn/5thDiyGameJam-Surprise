@@ -3,7 +3,7 @@ export(PackedScene) var click_scene
 export(PackedScene) var key_scene
 export(PackedScene) var event_scene
 export(PackedScene) var draw_scene
-export var fail_max_count: int = 5
+var fail_max_count: int = SceneChanger.scene_data.fail_max_count
 export var key_json_path: String = "res://JSON/Key.json"
 export var quest_json_path: String = "res://JSON/Quest.json"
 export var event_json_path: String = "res://JSON/Event.json"
@@ -63,6 +63,10 @@ func end_game():
 	$Music.stop()
 	$BackgroundAnimation.stop()
 	print("Game over! current index:", current_quest_index)
+	SceneChanger.scene_data.final_index = current_quest_index
+	SceneChanger.scene_data.final_product = current_key_code
+	SceneChanger.scene_data.fail_count = fail_count
+	SceneChanger.change_scene_with_animate("EndScreen.tscn", "show_final")
 	
 func on_succeed(type):
 	print("succeed!")
