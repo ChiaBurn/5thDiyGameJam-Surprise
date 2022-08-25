@@ -33,6 +33,9 @@ func _on_Answer2_pressed():
 func _on_Answer3_pressed():
 	end_event(selections[2]["isAnswer"])
 
+func _on_AnimatedSprite_animation_finished():
+	end_event(false)
+
 func end_event(isCorrect: bool):
 	disable_all_button()
 	$AnimatedSprite.stop()
@@ -56,5 +59,3 @@ func emit_then_remove_self(isCorrect: bool):
 	emit_signal("succeed" if isCorrect else "fail", "Event")
 	queue_free()
 
-func _on_AnimatedSprite_animation_finished():
-	emit_then_remove_self(false)
