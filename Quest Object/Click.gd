@@ -15,14 +15,19 @@ func _ready():
 	$AnimatedSprite.set_speed_scale(speed_scale)
 	$AnimatedSprite.playing = true
 
-func emit_then_remove_self(signal_value):
+func emit_then_remove_self(isSucceed: bool):
 	hide()
-	emit_signal(signal_value, "Click")
+	$AnimatedSprite.playing = false
+	$CollisionShape2D.disabled = true
+	emit_signal("succeed" if isSucceed else "fail", "Click")
+	if(isSucceed):
+		$ClickSucceedSound.play()
+		yield($ClickSucceedSound, "finished")
 	queue_free()
 
 func _on_AnimatedSprite_animation_finished():
-	emit_then_remove_self("fail")
+	emit_then_remove_self(false)
 
 func _on_Click_input_event(viewport, event, shape_idx):
 	if(event is InputEventMouseButton && event.pressed && event.button_index == BUTTON_LEFT):
-		emit_then_remove_self("succeed")
+		emit_then_remove_self(true)

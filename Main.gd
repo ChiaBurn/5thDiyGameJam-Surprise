@@ -28,12 +28,21 @@ var events: Array
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	initialize()
+	start_game()
+	
+func initialize():
 	randomize()
+	current_quest_index = 0
+	current_key_code = "start"
+	fail_count = 0
 	keys = load_data_from_json_file(key_json_path)
 	quests = load_data_from_json_file(quest_json_path)
 	events = load_data_from_json_file(event_json_path)
 	events.shuffle()
-	start_game()
+	$ProgressBar.value = 0
+	$ProgressBar.max_value = quests.size()
+	
 	
 func load_data_from_json_file(path):
 	var file = File.new()
@@ -57,9 +66,6 @@ func end_game():
 	
 func on_succeed(type):
 	print("succeed!")
-	match type:
-		"Click":
-			$ClickSucceedSound.play()
 	go_next_quest()
 
 func on_fail(type):
@@ -83,6 +89,7 @@ func go_next_quest():
 		end_game()
 		return
 	show_current_quest()
+	$ProgressBar.value += 1
 
 func show_current_quest():
 	var quest = quests[current_quest_index]	
