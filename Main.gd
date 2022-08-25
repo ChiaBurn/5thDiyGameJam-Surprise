@@ -54,6 +54,9 @@ func end_game():
 	$Music.stop()
 	$BackgroundAnimation.stop()
 	print("Game over! current index:", current_quest_index)
+	SceneChanger.scene_data.final_index = current_quest_index
+	SceneChanger.scene_data.final_product = current_key_code
+	SceneChanger.change_scene_with_animate("EndScreen.tscn", "show_final")
 	
 func on_succeed(type):
 	print("succeed!")
