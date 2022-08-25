@@ -1,6 +1,6 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://Asset/Fonts/NotoSansTC-Regular.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Asset/Fonts/NotoSansTC-Bold.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Quest Object/Event.gd" type="Script" id=2]
 [ext_resource path="res://Asset/Image/Quest/Event/Event-05.png" type="Texture" id=3]
 [ext_resource path="res://Asset/Image/Quest/Event/Event-03.png" type="Texture" id=4]
@@ -17,10 +17,6 @@
 [ext_resource path="res://Asset/Sound/event_show.mp3" type="AudioStream" id=15]
 
 [sub_resource type="DynamicFont" id=2]
-size = 20
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=3]
 font_data = ExtResource( 1 )
 
 [sub_resource type="SpriteFrames" id=4]
@@ -64,7 +60,7 @@ margin_left = -117.5
 margin_top = -23.5
 margin_right = 117.5
 margin_bottom = 23.5
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "選項1"
 
 [node name="Answer2" type="Button" parent="."]
@@ -76,7 +72,7 @@ margin_left = -117.5
 margin_top = 56.5
 margin_right = 117.5
 margin_bottom = 103.5
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "選項2"
 
 [node name="Answer3" type="Button" parent="."]
@@ -88,7 +84,7 @@ margin_left = -117.5
 margin_top = 137.5
 margin_right = 117.5
 margin_bottom = 184.5
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "選項3"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
