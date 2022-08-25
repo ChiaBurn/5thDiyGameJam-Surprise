@@ -28,12 +28,19 @@ var events: Array
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	reset_variables()
 	randomize()
+	start_game()
+	
+func reset_variables():
+	current_quest_index = 0
+	current_key_code = "start"
+	fail_count = 0
 	keys = load_data_from_json_file(key_json_path)
 	quests = load_data_from_json_file(quest_json_path)
 	events = load_data_from_json_file(event_json_path)
 	events.shuffle()
-	start_game()
+	
 	
 func load_data_from_json_file(path):
 	var file = File.new()
