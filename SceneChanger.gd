@@ -4,6 +4,8 @@ export var scene_data: Dictionary ={
 	"final_index" : 0,
 	"phase_1_index" : 10,
 	"phase_2_index" : 25,
+	"fail_count" : 0,
+	"fail_max_count" : 5,
 	"final_product" : "",
 }
 

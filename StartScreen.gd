@@ -3,6 +3,7 @@ extends Node
 
 func _on_TempStartButton_pressed():
 	SceneChanger.scene_data.final_index = 0
+	SceneChanger.scene_data.fail_count = 0
 	SceneChanger.scene_data.final_product = ""
 	$AnimationPlayer.play("start")
 	$game_start.play()
