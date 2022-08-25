@@ -28,11 +28,11 @@ var events: Array
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	reset_variables()
-	randomize()
+	initialize()
 	start_game()
 	
-func reset_variables():
+func initialize():
+	randomize()
 	current_quest_index = 0
 	current_key_code = "start"
 	fail_count = 0
@@ -40,6 +40,8 @@ func reset_variables():
 	quests = load_data_from_json_file(quest_json_path)
 	events = load_data_from_json_file(event_json_path)
 	events.shuffle()
+	$ProgressBar.value = 0
+	$ProgressBar.max_value = quests.size()
 	
 	
 func load_data_from_json_file(path):
@@ -90,6 +92,7 @@ func go_next_quest():
 		end_game()
 		return
 	show_current_quest()
+	$ProgressBar.value += 1
 
 func show_current_quest():
 	var quest = quests[current_quest_index]	
