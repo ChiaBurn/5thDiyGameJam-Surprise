@@ -9,6 +9,7 @@ radius = 32.0
 height = 112.0
 
 [sub_resource type="DynamicFont" id=2]
+size = 20
 font_data = ExtResource( 3 )
 
 [node name="Key" type="Area2D" groups=["keys"]]
