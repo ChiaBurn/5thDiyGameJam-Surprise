@@ -56,7 +56,11 @@
 	},
 	{
 		"type": "Event",
-		"life": 8000
+		"life": 9000
+	},
+	{
+		"type": "Event",
+		"life": 6000
 	},
 	{
 		"type": "Event",
@@ -71,26 +75,22 @@
 		"life": 3000
 	},
 	{
-		"type": "Event",
-		"life": 2000
-	},
-	{
 		"type": "Click",
-		"life": 1000,
+		"life": 2000,
 		"position": "L1"
 	},
 	{
 		"type": "Event",
-		"life": 2000
+		"life": 3000
 	},
 	{
 		"type": "Click",
-		"life": 1000,
+		"life": 2000,
 		"position": "R1"
 	},
 	{
 		"type": "Click",
-		"life": 700,
+		"life": 1000,
 		"position": "L3"
 	},
 	{
@@ -110,20 +110,20 @@
 	},
 	{
 		"type": "Event",
-		"life": 2000
+		"life": 3000
 	},
 	{
 		"type": "Click",
-		"life": 700,
+		"life": 1700,
 		"position": "L2"
 	},
 	{
 		"type": "Event",
-		"life": 2000
+		"life": 3000
 	},
 	{
 		"type": "Click",
-		"life": 500,
+		"life": 1500,
 		"position": "R2"
 	},
 	{
@@ -136,11 +136,11 @@
 	},
 	{
 		"type": "Event",
-		"life": 2000
+		"life": 3000
 	},
 	{
 		"type": "Click",
-		"life": 700,
+		"life": 1000,
 		"position": "L1"
 	},
 	{
@@ -153,12 +153,12 @@
 	},
 	{
 		"type": "Click",
-		"life": 500,
+		"life": 700,
 		"position": "M2"
 	},
 	{
 		"type": "Event",
-		"life": 2000
+		"life": 3000
 	},
 	{
 		"type": "Click",
