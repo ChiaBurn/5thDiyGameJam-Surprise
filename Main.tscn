@@ -1,10 +1,9 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Quest Object/Click.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Quest Object/Key.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Asset/Sound/BGM.mp3" type="AudioStream" id=4]
-[ext_resource path="res://Asset/Sound/click_succeed.mp3" type="AudioStream" id=5]
 [ext_resource path="res://Asset/Sound/key_show.mp3" type="AudioStream" id=6]
 [ext_resource path="res://Asset/Sound/key_select.mp3" type="AudioStream" id=7]
 [ext_resource path="res://Asset/Image/progress_bar-progress.png" type="Texture" id=8]
@@ -64,9 +63,6 @@ position = Vector2( 293, 712 )
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 volume_db = -10.0
-
-[node name="ClickSucceedSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
 
 [node name="KeyShowSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )

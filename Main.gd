@@ -66,9 +66,6 @@ func end_game():
 	
 func on_succeed(type):
 	print("succeed!")
-	match type:
-		"Click":
-			$ClickSucceedSound.play()
 	go_next_quest()
 
 func on_fail(type):
