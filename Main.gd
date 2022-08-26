@@ -74,6 +74,7 @@ func on_succeed(type):
 func on_fail(type):
 	fail_count += 1
 	if(fail_count >= fail_max_count):
+		current_key_code = "fail"
 		end_game()
 		return
 	go_next_quest()

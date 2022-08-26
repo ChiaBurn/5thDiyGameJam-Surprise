@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://EndScreen.gd" type="Script" id=1]
 [ext_resource path="res://Asset/Image/Result/passion_furry_shota.png" type="Texture" id=2]
@@ -13,13 +13,14 @@
 [ext_resource path="res://Asset/Image/Result/phase_1_fail.png" type="Texture" id=11]
 [ext_resource path="res://Asset/Image/Result/phase_2_fail.png" type="Texture" id=12]
 [ext_resource path="res://Asset/Image/Result/passion_nekomimi_maid.png" type="Texture" id=13]
+[ext_resource path="res://Asset/Image/Result/phase_0_fail.png" type="Texture" id=14]
 [ext_resource path="res://Asset/Image/UI/Restart.png" type="Texture" id=15]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 7 ) ],
-"loop": false,
-"name": "creative_cute_chick",
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "phase_0_fail",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ) ],
@@ -27,24 +28,9 @@ animations = [ {
 "name": "creative_cute_kitty",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 8 ) ],
 "loop": false,
-"name": "creative_soul_meow",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ) ],
-"loop": false,
-"name": "creative_soul_power",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ) ],
-"loop": false,
-"name": "passion_furry_power",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 2 ) ],
-"loop": false,
-"name": "passion_furry_shota",
+"name": "phase_3_fail",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ) ],
@@ -52,19 +38,24 @@ animations = [ {
 "name": "passion_nekomimi_girl",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 11 ) ],
+"loop": false,
+"name": "phase_1_fail",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": false,
+"name": "creative_cute_chick",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 13 ) ],
 "loop": false,
 "name": "passion_nekomimi_maid",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": false,
-"name": "perfect",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 11 ) ],
-"loop": false,
-"name": "phase_1_fail",
+"name": "passion_furry_power",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 12 ) ],
@@ -72,9 +63,24 @@ animations = [ {
 "name": "phase_2_fail",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ) ],
+"frames": [ ExtResource( 5 ) ],
 "loop": false,
-"name": "phase_3_fail",
+"name": "creative_soul_power",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": false,
+"name": "perfect",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": false,
+"name": "creative_soul_meow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": false,
+"name": "passion_furry_shota",
 "speed": 5.0
 } ]
 
@@ -90,7 +96,7 @@ color = Color( 0.984314, 0.941176, 0.878431, 1 )
 position = Vector2( 270, 401 )
 scale = Vector2( 0.390741, 0.390741 )
 frames = SubResource( 1 )
-animation = "phase_3_fail"
+animation = "phase_0_fail"
 
 [node name="Button" type="Button" parent="."]
 anchor_left = 0.5
