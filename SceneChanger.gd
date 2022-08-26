@@ -26,7 +26,7 @@ func animate_fade(target_scene: String):
 	get_tree().change_scene(target_scene)
 
 func animate_show_final(target_scene: String):
-	$AnimationPlayer.play("fade")
+	$AnimationPlayer.play("fade", -1, 0.5)
 	yield($AnimationPlayer, "animation_finished")
 	get_tree().change_scene(target_scene)
 	$AnimationPlayer.play("show_final")
