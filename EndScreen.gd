@@ -41,10 +41,12 @@ func _show_result():
 		"fail":
 			if final_index <= phase_0_index:
 				$AnimatedSprite.play("phase_0_fail")
-			elif  final_index <= phase_1_index:
+			elif final_index <= phase_1_index:
 				$AnimatedSprite.play("phase_1_fail")
-			elif  final_index <= phase_2_index:
+			elif final_index <=  phase_2_index:
 				$AnimatedSprite.play("phase_2_fail")
+			elif final_index > phase_2_index:
+				$AnimatedSprite.play("phase_3_fail")
 		_:
 			print("Error Result")
 
