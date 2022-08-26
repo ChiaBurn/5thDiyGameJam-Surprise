@@ -19,36 +19,35 @@ func _ready():
 	_show_result()
 	
 func _show_result():
-	match final_product:
-		"creative_soul_meow":
-			$AnimatedSprite.play("creative_soul_meow")
-		"creative_soul_power":
-			$AnimatedSprite.play("creative_soul_power")
-		"creative_cute_chick":
-			$AnimatedSprite.play("creative_cute_chick")
-		"creative_cute_kitty":
-			$AnimatedSprite.play("creative_cute_kitty")
-		"passion_nekomimi_girl":
-			$AnimatedSprite.play("passion_nekomimi_girl")
-		"passion_nekomimi_maid":
-			$AnimatedSprite.play("passion_nekomimi_maid")
-		"passion_furry_shota":
-			$AnimatedSprite.play("passion_furry_shota")
-		"passion_furry_power":
-			$AnimatedSprite.play("passion_furry_power")
-		"perfect":
-			$AnimatedSprite.play("perfect")
-		"fail":
-			if final_index <= phase_0_index:
-				$AnimatedSprite.play("phase_0_fail")
-			elif final_index <= phase_1_index:
-				$AnimatedSprite.play("phase_1_fail")
-			elif final_index <=  phase_2_index:
-				$AnimatedSprite.play("phase_2_fail")
-			elif final_index > phase_2_index:
-				$AnimatedSprite.play("phase_3_fail")
-		_:
-			print("Error Result")
+	var valid_result_code = [
+		"creative_soul_meow",
+		"creative_soul_power",
+		"creative_cute_chick",
+		"creative_cute_kitty",
+		"passion_nekomimi_girl",
+		"passion_nekomimi_maid",
+		"passion_furry_shota",
+		"passion_furry_power",
+		"real_melt",
+		"real_normal",
+		"real_moe",
+		"real_sample",
+		"perfect"]
+	if (valid_result_code.has(final_product)):
+		$AnimatedSprite.play(final_product)
+		return	
+	if (final_product == "fail"):
+		if final_index <= phase_0_index:
+			$AnimatedSprite.play("phase_0_fail")
+		elif final_index <= phase_1_index:
+			$AnimatedSprite.play("phase_1_fail")
+		elif final_index <=  phase_2_index:
+			$AnimatedSprite.play("phase_2_fail")
+		elif final_index > phase_2_index:
+			$AnimatedSprite.play("phase_3_fail")
+		return
+	print("Error Result")
+	return
 
 
 func _on_Button_pressed():

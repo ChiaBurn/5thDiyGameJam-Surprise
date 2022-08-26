@@ -8,6 +8,9 @@
 		},
 		{
 			"code": "perfect", "value": "完美還原", "position": "R3"
+		},
+		{
+			"code": "real", "value": "寫實目標", "position": "L3"
 		}
 	],
 	"creative": [
@@ -56,6 +59,20 @@
 		},
 		{
 			"code": "passion_furry_power", "value": "POWER!", "position": "R3"
+		}
+	],
+	"real": [
+		{
+			"code": "real_melt", "value": "液化", "position": "R1"
+		},
+		{
+			"code": "real_normal", "value": "寫實", "position": "M3"
+		},
+		{
+			"code": "real_moe", "value": "萌殺", "position": "R3"
+		},
+		{
+			"code": "real_sample", "value": "心意貓貓（真）", "position": "M2"
 		}
 	]
 }
