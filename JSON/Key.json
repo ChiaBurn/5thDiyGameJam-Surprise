@@ -28,10 +28,10 @@
 	],
 	"creative_cute": [
 		{
-			"code": "creative_cute_chick", "value": "可愛小雞", "position": "M2"
+			"code": "creative_cute_chick", "value": "啾啾啾？", "position": "M2"
 		},
 		{
-			"code": "creative_cute_kitty", "value": "可愛小貓", "position": "L1"
+			"code": "creative_cute_kitty", "value": "喵喵喵！", "position": "L1"
 		}
 	],
 	"passion": [
