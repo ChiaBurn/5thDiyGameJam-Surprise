@@ -43,6 +43,7 @@ func initialize():
 	events.shuffle()
 	$ProgressBar.value = 0
 	$ProgressBar.max_value = quests.size()
+	$HeartContainer.initialize(fail_max_count)
 	
 	
 func load_data_from_json_file(path):
@@ -73,6 +74,7 @@ func on_succeed(type):
 
 func on_fail(type):
 	fail_count += 1
+	$HeartContainer.decrease(1)
 	if(fail_count >= fail_max_count):
 		current_key_code = "fail"
 		end_game()

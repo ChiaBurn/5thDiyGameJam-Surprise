@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Quest Object/Click.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Quest Object/Key.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Asset/Sound/BGM.mp3" type="AudioStream" id=4]
+[ext_resource path="res://HeartContainer.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Asset/Sound/key_show.mp3" type="AudioStream" id=6]
 [ext_resource path="res://Asset/Sound/key_select.mp3" type="AudioStream" id=7]
 [ext_resource path="res://Asset/Image/UI/progress_bar-progress.png" type="Texture" id=8]
@@ -79,3 +80,11 @@ margin_right = 200.0
 margin_bottom = 107.0
 texture_under = ExtResource( 9 )
 texture_progress = ExtResource( 8 )
+
+[node name="HeartContainer" parent="." instance=ExtResource( 5 )]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -194.0
+margin_top = 35.0
+margin_right = 7566.0
+margin_bottom = 575.0
