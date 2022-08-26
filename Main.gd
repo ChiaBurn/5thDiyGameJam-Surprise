@@ -63,20 +63,18 @@ func start_game():
 func end_game():
 	$Music.stop()
 	$BackgroundAnimation.stop()
-	print("Game over! current index:", current_quest_index)
 	SceneChanger.scene_data.final_index = current_quest_index
 	SceneChanger.scene_data.final_product = current_key_code
 	SceneChanger.scene_data.fail_count = fail_count
 	SceneChanger.change_scene_with_animate("EndScreen.tscn", "show_final")
 	
 func on_succeed(type):
-	print("succeed!")
 	go_next_quest()
 
 func on_fail(type):
-	print("fail!")
 	fail_count += 1
 	if(fail_count >= fail_max_count):
+		current_key_code = "fail"
 		end_game()
 		return
 	go_next_quest()
@@ -84,7 +82,6 @@ func on_fail(type):
 func on_select_key(code):
 	$KeySelectSound.play()
 	current_key_code = code
-	print("select key:", code)
 	get_tree().call_group("keys", "queue_free")
 	go_next_quest()
 
@@ -121,7 +118,6 @@ func show_click(quest):
 func show_key(code):
 	var current_key_selection = keys.get(code)
 	if(current_key_selection == null):
-		print("no more key object!")
 		go_next_quest()
 		return
 	for selection in current_key_selection:
@@ -138,7 +134,6 @@ func show_key_selection(selection):
 func show_event(quest):
 	var current_event = events.pop_back()
 	if(current_event == null):
-		print("no more event object!")
 		go_next_quest()
 		return
 	var event = event_scene.instance()

@@ -2,6 +2,7 @@ extends CanvasLayer
 
 export var scene_data: Dictionary ={
 	"final_index" : 0,
+	"phase_0_index" : 4,
 	"phase_1_index" : 10,
 	"phase_2_index" : 25,
 	"fail_count" : 0,
