@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/real_moe.jpg-d801b7c174db27686b1882eccfd0b86b.stex"
+path="res://.import/real_moe.png-f23c343abbc3c60ab3f880450ed6dff8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Image/Result/real_moe.jpg"
-dest_files=[ "res://.import/real_moe.jpg-d801b7c174db27686b1882eccfd0b86b.stex" ]
+source_file="res://Asset/Image/Result/real_moe.png"
+dest_files=[ "res://.import/real_moe.png-f23c343abbc3c60ab3f880450ed6dff8.stex" ]
 
 [params]
 

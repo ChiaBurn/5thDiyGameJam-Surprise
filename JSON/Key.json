@@ -10,7 +10,7 @@
 			"code": "perfect", "value": "完美還原", "position": "R3"
 		},
 		{
-			"code": "real", "value": "寫實目標", "position": "R1"
+			"code": "real", "value": "喔喔有貓！？", "position": "R1"
 		}
 	],
 	"creative": [
@@ -66,7 +66,7 @@
 			"code": "real_melt", "value": "液化", "position": "R1"
 		},
 		{
-			"code": "real_normal", "value": "寫實", "position": "M3"
+			"code": "real_stare", "value": "寫實凝視", "position": "M3"
 		},
 		{
 			"code": "real_moe", "value": "萌殺", "position": "R3"

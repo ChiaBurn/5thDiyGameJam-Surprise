@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/real_melt.jpg-9eb79cb6a5c0fb90d3586ece0bf86b10.stex"
+path="res://.import/real_stare.png-400dfa6d5f0d5353475fc8283dc4ca1d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Image/Result/real_melt.jpg"
-dest_files=[ "res://.import/real_melt.jpg-9eb79cb6a5c0fb90d3586ece0bf86b10.stex" ]
+source_file="res://Asset/Image/Result/real_stare.png"
+dest_files=[ "res://.import/real_stare.png-400dfa6d5f0d5353475fc8283dc4ca1d.stex" ]
 
 [params]
 

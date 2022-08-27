@@ -29,7 +29,7 @@ func _show_result():
 		"passion_furry_shota",
 		"passion_furry_power",
 		"real_melt",
-		"real_normal",
+		"real_stare",
 		"real_moe",
 		"real_sample",
 		"perfect"]
